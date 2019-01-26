@@ -1,0 +1,92 @@
+---
+layout: default
+---
+<div class="row">
+<div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+                 
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+		  
+		  
+		  
+		  
+		    <br>
+	  
+	  
+	  
+	<center>  
+<style>
+.a2name { width: 336px; height: 280px; }
+@media(min-width: 320px) { .a2name { width: 300px; height: 250px; } }
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- a2 -->
+<ins class="adsbygoogle a2name"
+style="display:inline-block"
+data-ad-client="ca-pub-9965606273577507"
+data-ad-slot="3651375474"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	</center>
+	
+		 <br>  
+		 <br>
+		 <br>
+		  
+            {{ content }}
+			
+<p><strong><a href="https://www.youtube.com/channel/UCRffvFjeKlYRV9SNgfeaRLQ?sub_confirmation=1" target="_blank"><span style="color: rgb(15, 49, 233); font-size: 12pt;">▶겜마블 유튜브 구독하고 게임 추천받기</span></a></strong></p>
+			
+			
+          </div>
+		  
+		  
+
+    </article>
+	
+	
+	
+	
+    <div class="row">
+
+	
+	
+	
+	
+	
+	
+	
+	댓글
+	
+	
+	
+	
+	
+	
+	
+    </div>
+    
+    
+    <div class="row">
+            <ul class="pager">
+             {% if page.next.url %}
+                    <li><a class="next" href="{{page.next.url | prepend: site.baseurl}}">&laquo; {{page.next.title}}</a></li>
+              {% endif %}
+              {% if page.previous.url %}
+                <li><a class="previous" href="{{page.previous.url | prepend: site.baseurl}}">{{page.previous.title}} &raquo;</a></li>
+              {% endif %}
+            </ul>
+    </div>
+</div>
+
+
+{% include sidebar.html %}
+
+</div>
